@@ -1,0 +1,24 @@
+{
+  "name": "nlw",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ericksonprofissional/nextLevelWeek.git"
+  },
+  "keywords": [],
+  "author": "Erickson de souza MArtinez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ericksonprofissional/nextLevelWeek/issues"
+  },
+  "homepage": "https://github.com/Ericksonprofissional/nextLevelWeek#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
