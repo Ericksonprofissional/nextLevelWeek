@@ -1,0 +1,77 @@
+.modal {
+    width: 100vw;
+    height: 100vh;
+    background: #150b24DD;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 400ms;
+}
+
+.modal.hide {
+    display: none;
+}
+
+.modal .content {
+    color: white;
+    width: 420px;
+}
+
+.modal .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+.modal .header a {
+    background: url("../assets/x.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    font-size: 0.01px;
+}
+
+.modal .header h1 {
+    color: white;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.modal form label {
+    line-height: 16px;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.modal form .field {
+    display: flex;    
+}
+
+.modal form input {
+    flex: 1;
+    background: #f0f0f5;
+    border: 0;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    padding: 16px 24px ;
+    color: #6c6c80;
+}
+
+.search a {
+    width: 72px;
+    height: 72px;
+    background: var(--primary-color);
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.search a:hover {
+    background: #2fb85e;
+}
+
