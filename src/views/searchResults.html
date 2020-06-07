@@ -1,45 +1,43 @@
-<!DOCTYPE html>
-<html lang="pt_br">
+{% extends "layout.html" %}
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+{% set pageId = "page-home" %}
+{% block style %}
     <link href="css/search-results.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
-    <title>Resultado da Pesquisa</title>
-</head>
+{% endblock style %}
 
-<body>
-    <div id=page-search-results>
-        {% include "partials/page-header.html"%}
-        <main>
-            <h4><strong>2 Pontos</strong> encontrados</h4>
-            <div class="cards"> 
-                <div class="card">
-                    <img src="assets/eletronicos.svg" alt="colectoria">
-                    <h1>Colectoria</h1>
-                    <h3>Resíduos Eletronicos, Lâmpada</h3>
-                    <p>Rio do Sul, Santa Catarina<br>
-                    Guilherme Gemballa, jardim América</br>
+{% block title %}
+    <title>Resultado da Pesquisa</title>
+{% endblock title %}
+
+{% block content %}
+    {% include "partials/page-header.html"%}
+    <main>
+        <h4>
+            <strong>2 Pontos</strong>
+            encontrados</h4>
+        <div class="cards">
+            <div class="card">
+                <img src="assets/eletronicos.svg" alt="colectoria">
+                <h1>Colectoria</h1>
+                <h3>Resíduos Eletronicos, Lâmpada</h3>
+                <p>Rio do Sul, Santa Catarina<br>
+                        Guilherme Gemballa, jardim América</br>
                     Nº 20
-                    </p>
-                </div>     
-                <div class="card">
-                    <img src="assets/papeis-papelao.svg" alt="Papersider">
-                    <h1>Papersider</h1>
-                    <h3>Papeis e papelão</h3>
-                    <p>Rio do Sul, Santa Catarina<br>
+                </p>
+            </div>
+            <div class="card">
+                <img src="assets/papeis-papelao.svg" alt="Papersider">
+                <h1>Papersider</h1>
+                <h3>Papeis e papelão</h3>
+                <p>Rio do Sul, Santa Catarina<br>
                     Guilherme Gemballa, jardim América<br>
                     Nº 20
-                    </p>
-                </div>               
+                </p>
             </div>
-        </main>
+        </div>
+    </main>
+{% endblock content %}
 
-    </div>
+{% block scriptJS %}
     <script src="js/search-results.js"></script>
-</body>
-
-</html>
+{% endblock scriptJS %}
