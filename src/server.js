@@ -6,25 +6,26 @@ server.listen(3000);
 
 // congigurar pasta publica
 
-server.use(express.static("public"))
-
-//pagina inicial
-server.get("/", (req, res) => {
-    res.sendFile(__dirname+ "/views/index.html")
-});
-
-server.get("/create-point", (req, res) => {
-    res.sendFile(__dirname + "/views/create-point.html");
-});
-
-server.get("/search-results", (req, res) => {
-    res.sendFile(__dirname + "/views/searchResults.html");
-});
-
-// utilisando templates engine
+server.use(express.static("public"));
 
 const nunjucks = require("nunjucks");
 nunjucks.configure("src/views", {
     express: server,
     noCache: false
 })
+
+//pagina inicial
+server.get("/", (req, res) => {
+    return res.render("index.html")
+});
+
+server.get("/create-point", (req, res) => {
+    return res.render("create-point.html");
+});
+
+server.get("/search-results", (req, res) => {
+    return res.render("searchResults.html");
+});
+
+// utilisando templates engine
+
