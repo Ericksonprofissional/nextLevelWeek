@@ -21,3 +21,10 @@ server.get("/search-results", (req, res) => {
     res.sendFile(__dirname + "/views/searchResults.html");
 });
 
+// utilisando templates engine
+
+const nunjucks = require("nunjucks");
+nunjucks.configure("src/views", {
+    express: server,
+    noCache: false
+})
