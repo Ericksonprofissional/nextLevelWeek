@@ -24,6 +24,18 @@
         height: 200px;
         width: 200px;
     }
+    #page-create-point .field-group {
+        flex-direction: column;
+    }
+    #page-create-point .field-group .field + .field{
+        margin: 0;
+    }
+    #page-create-point fieldset legend {
+        flex-direction: column;
+    }
+    #page-create-point fieldset legend h2{
+        margin-bottom: 14px;
+    }
 }
 
 @media (min-width: 1700px){
